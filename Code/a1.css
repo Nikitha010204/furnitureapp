@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "TheGwatmey";
+    src: url('textfonts/TheGwathmey.woff') format('woff');
+}
+
+@font-face {
+    font-family: "EBGaramondItalic";
+    src: url('textfonts/EBGaramond-Italic.woff') format('woff');
+}
+
+html {
+    font-size: 10px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+:root {
+    --primary-color: #1d1d1d;        
+}
+
+.container,
+.small-container,
+.medium-container {
+    width: 100%;
+    max-width: 130rem;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.small-container {
+    max-width: 100rem;
+}
+
+.medium-container {
+    max-width: 120rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* HEADER */
+
+.navbar .logo {
+    font-size: 1.8rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    height: 7rem;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li:not(:last-child) {
+    margin-right: 5rem; 
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.navbar a {
+    transition: opacity .3s;
+}
+
+.navbar a:hover {
+    opacity: .6;
+}
+
+.navbar div svg:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.menu-toggle {
+    font-size: 3rem;
+    color: #ddd;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+.timeless {
+    font-size: 4rem;
+    color: #f42153;
+    font-family: "TheGwatmey";
+    font-weight: bold;
+
+}
+.timeless1 {
+    font-size: 3rem;
+    color: black;
+    font-family: "TheGwatmey";
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero {
+    background-color: #f2f0f1;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 30rem;
+}
+
+.hero-info {
+    flex-basis: 50%;
+    align-self: flex-start;
+    padding: 12rem 0;
+    min-width: 30rem;
+}
+
+.hero-image {
+    min-width: 30rem;
+}
+
+.col-2 img,
+.hero-image img {
+    max-width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    margin: 2rem 0;
+    font-family: "TheGwatmey";
+}
+
+.hero p,
+.offer p {
+    font-size: 1.9rem;
+    color: #4c4c43;
+    margin: 2rem 0;
+    line-height: 1.5;
+    font-family: "TheGwatmey";
+}
+
+.btn {
+    display: inline-block;
+    border: .1rem solid #4c4c43;
+    padding: 1.2rem 2.2rem;
+    margin-top: 1.5rem;
+    font-size: 1.9rem;
+    background-color: #4c4c43;
+    color: white;
+    font-family: "EBGaramondItalic";
+    transition: all .3s;
+ 
+}
+
+.btn:hover {
+    background-color: #4c4c43;
+    color: #f2f0f1;
+}
+
+.navbar svg {
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 2.6rem;
+    margin-left: 2rem;
+    display: none;
+}
+
+
+/*                          SINGLE PRODUCT PAGE                       */
+
+.single-product {
+    margin-top: 7rem;
+}
+
+.single-product h1 {
+    font-size: 4rem;
+}
+
+.single-product p {
+    font-size: 1.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.single-product .col-2 img {
+    padding: 0;
+}
+
+.single-product .col-2 {
+    padding: 2rem;
+}
+
+.order {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.single-product select {
+    color: var(--primary-color);
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    border: .1rem solid #ddd;
+    padding: .5rem 2rem;
+    font-size: 1.9rem;
+    font-family: "Josefin Sans", sans-serif;
+    height: 5.5rem;
+}
+
+.single-product .btn {
+    margin: 0;
+    margin-bottom: 2rem;
+    height: 5.5rem;
+}
+
+.wish {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.9rem;
+    font-family: "EBGaramondItalic";
+}
+
+.wish svg {
+    margin-right: 1rem;
+}
+
+.other-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4rem;
+}
+
+.other-details h4 {
+    margin: 1rem 0;
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
+
+.other-details span {
+    font-family: "EBGaramondItalic";
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: #777;
+    text-transform: capitalize;
+    margin-left: 1.5rem;
+}
+
+.view-more {
+    font-size: 2rem;
+}
+
+
+
+
+
